@@ -2,6 +2,8 @@
 import discord
 import asyncio
 from discord.ext import commands
+
+import config
 from status import statusAddAtk, statusAddDef, statusAddSpd, statusMultAtk, statusMultDef, statusMultSpd, statusDoT, statusNames
 import creatures
 import items
@@ -9,7 +11,7 @@ from team import Team
 import math
 
 
-TOKEN = 'NTQ1MDc1MzgzODc2MzIxMjgy.D0VoeQ.RZX5DnefTV5otsBPmQl5z9IGgvQ'
+TOKEN = config.TOKEN
 
 description = "A bunch of mishmashed stuff."
 bot = commands.Bot(command_prefix="c!", description=description)

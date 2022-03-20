@@ -96,7 +96,7 @@ class ComputerVirus(Creature):
         return msg
     # If creature is Puppet, check that the response is "1" or "2".
     # If creature is Witch, check that the response message contains "burn, frostbite, heal", then a number.
-    # msg is the CONTENT of the msg (msg.content in the bot file).
+    # msg is the CONTENT of the msg (msg.content in the bot.py file).
     def abilityCheck(self, msg):
         if self.name == "Puppet":
             if msg == "1" or msg == "2":
